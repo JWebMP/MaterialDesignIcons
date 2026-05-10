@@ -5,9 +5,9 @@ import com.jwebmp.core.base.html.Italic;
 import com.jwebmp.core.base.interfaces.IIcon;
 import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 
-public class MaterialDesignIcon
-		extends Italic<MaterialDesignIcon>
-		implements IIcon<IComponentHierarchyBase<?,?>, MaterialDesignIcon>
+public class MaterialDesignIcon<J extends MaterialDesignIcon<J>>
+		extends Italic<J>
+		implements IIcon<IComponentHierarchyBase<?,?>, J>
 {
 	private MaterialDesignIconThemes theme;
 	private MaterialDesignIcons icon;
@@ -71,10 +71,11 @@ public class MaterialDesignIcon
 		return theme;
 	}
 
-	public MaterialDesignIcon setTheme(MaterialDesignIconThemes theme)
+	@SuppressWarnings("unchecked")
+	public J setTheme(MaterialDesignIconThemes theme)
 	{
 		this.theme = theme;
-		return this;
+		return (J) this;
 	}
 
 	public MaterialDesignIcons getIcon()
@@ -82,10 +83,11 @@ public class MaterialDesignIcon
 		return icon;
 	}
 
-	public MaterialDesignIcon setIcon(MaterialDesignIcons icon)
+	@SuppressWarnings("unchecked")
+	public J setIcon(MaterialDesignIcons icon)
 	{
 		this.icon = icon;
-		return this;
+		return (J) this;
 	}
 
 	public MaterialDesignIconSize getSize()
@@ -93,10 +95,11 @@ public class MaterialDesignIcon
 		return size;
 	}
 
-	public MaterialDesignIcon setSize(MaterialDesignIconSize size)
+	@SuppressWarnings("unchecked")
+	public J setSize(MaterialDesignIconSize size)
 	{
 		this.size = size;
-		return this;
+		return (J) this;
 	}
 
 	public MaterialDesignIconColours getColour()
@@ -104,10 +107,11 @@ public class MaterialDesignIcon
 		return colour;
 	}
 
-	public MaterialDesignIcon setColour(MaterialDesignIconColours colour)
+	@SuppressWarnings("unchecked")
+	public J setColour(MaterialDesignIconColours colour)
 	{
 		this.colour = colour;
-		return this;
+		return (J) this;
 	}
 
 	public boolean isInactive()
@@ -115,10 +119,11 @@ public class MaterialDesignIcon
 		return inactive;
 	}
 
-	public MaterialDesignIcon setInactive(boolean inactive)
+	@SuppressWarnings("unchecked")
+	public J setInactive(boolean inactive)
 	{
 		this.inactive = inactive;
-		return this;
+		return (J) this;
 	}
 
 	@Override
