@@ -23,7 +23,7 @@ Built on [Google Material Design Icons](https://google.github.io/material-design
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>material-design-icons</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.3-SNAPSHOT</version>
 </dependency>
 ```
 
