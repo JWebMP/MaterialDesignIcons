@@ -12,5 +12,5 @@ module com.jwebmp.plugins.materialdesignicons {
 	provides com.guicedee.client.services.config.IGuiceScanModuleExclusions with com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsExclusionsModule;
 	provides com.guicedee.client.services.config.IGuiceScanModuleInclusions with MaterialDesignIconsInclusionModule;
 
-	opens com.jwebmp.plugins.materialdesignicons to com.fasterxml.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.materialdesignicons to tools.jackson.databind, com.jwebmp.core;
 }
