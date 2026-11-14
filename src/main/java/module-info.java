@@ -1,5 +1,3 @@
-import com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsInclusionModule;
-
 module com.jwebmp.plugins.materialdesignicons {
 
 	exports com.jwebmp.plugins.materialdesignicons;
@@ -10,7 +8,8 @@ module com.jwebmp.plugins.materialdesignicons {
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.materialdesignicons.MaterialDesignIconsPageConfigurator;
 	provides com.guicedee.client.services.config.IGuiceScanModuleExclusions with com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsExclusionsModule;
-	provides com.guicedee.client.services.config.IGuiceScanModuleInclusions with MaterialDesignIconsInclusionModule;
 
 	opens com.jwebmp.plugins.materialdesignicons to tools.jackson.databind, com.jwebmp.core;
+
+    provides com.guicedee.client.services.config.IGuiceScanJarExclusions with com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsExclusionsModule;
 }

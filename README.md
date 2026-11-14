@@ -118,7 +118,6 @@ src/main/java/com/jwebmp/plugins/materialdesignicons/
 ├── MaterialDesignIconsCSSReference.java   # CSS reference for stylesheet
 ├── MaterialDesignIconsPageConfigurator.java # Auto-registration via ServiceLoader
 └── implementations/
-    ├── MaterialDesignIconsInclusionModule.java
     └── MaterialDesignIconsExclusionsModule.java
 ```
 
